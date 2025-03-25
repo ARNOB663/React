@@ -22,5 +22,9 @@ const friends=["HERO","JKR","SRK"]
 console.log(friends)//prints the array
 console.log(friends[1])//prints the value of 1st index
 console.log(friends.length)//prints the length of the array
+friends.push("US")//insterts a new string in the array
+
+console.log(friends)
+friends.unshift("BD")//puts bd in the front
 console.log(friends)
 
