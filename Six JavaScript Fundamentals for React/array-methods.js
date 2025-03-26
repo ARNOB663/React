@@ -27,3 +27,7 @@ console.log(result_black)
 //
 const result1=products.filter(products=>products.price>3000)
 console.log(result1)
+
+const result3 = products.find(product=>product.name=="apple1")
+console.log(result3)
+
