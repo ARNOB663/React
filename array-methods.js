@@ -15,3 +15,15 @@ console.log(names)
 // returns the all the product brand name in an array using map
 const brand = products.map(brands=>brands.brand)
 console.log(...brand)
+
+
+//prints product object using for each 
+products.forEach(products=>console.log(products))
+//
+products.forEach(product=>console.log(product.color))
+//filterd the product that have brand of apple 
+const result_black=products.filter(product=>product.brand==='apple')
+console.log(result_black)
+//
+const result1=products.filter(products=>products.price>3000)
+console.log(result1)
