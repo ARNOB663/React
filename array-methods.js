@@ -12,5 +12,6 @@ console.log(...result)
 // returns the all the product name in an array using map
 const names = products.map(product=>product.name)
 console.log(names)
+// returns the all the product brand name in an array using map
 const brand = products.map(brands=>brands.brand)
 console.log(...brand)
