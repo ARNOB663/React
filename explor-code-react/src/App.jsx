@@ -9,6 +9,8 @@ function App() {
  <>
   <h1>Vite + React</h1>
   <Person></Person>
+  <Sports/>
+  <Pet/>
  </>
    
   )
@@ -21,6 +23,15 @@ function Person(){
     <p>i am a person {age} and name {name}</p>
   )
 }
+ 
+function Pet(){
+return (
+  <h1>Dogesh</h1>
+
+)
+
+}
+
 function Sports(){
   return (
     <div>
