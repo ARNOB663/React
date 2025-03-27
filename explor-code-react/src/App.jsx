@@ -7,27 +7,83 @@ function App() {
 
   return (
  <>
-  <h1>Vite + React</h1>
-  <Person></Person>
-  <Sports/>
-  <Pet/>
+  <h1>React Core concept</h1>
+  <Student/>
+  <Person age='20' name='arnb'/>
+  <Developer name='akkas' tech='JS'> </Developer> 
+  <Developer name='sakib' tech='C++'/>
+  <Developer name='Daddy' tech="java"/>
+  <Player name='tamim' runs="6000"/>
+  <Player name='mushi' runs="5000"/>
+  <Salary name='Alex' amont='6k'/> 
+  <Salary name='Alex' /> 
  </>
-   
+  )
+}
+//const {name,tech} = {}
+function Salary({name,amont=0})
+{
+return (
+<div className='Student'>
+  <h4>salary For: {name} </h4>
+  <p>Amount: {amont} </p>
+
+</div>
+)
+
+}
+
+
+function Player({name,runs})
+{
+  return (
+    <div className='Student'>
+      <h3>Name: {name} </h3>
+      <p>Runs: {runs}</p>
+    </div>
   )
 }
 
-function Person(){
-  const age =17
-  const name ="arnob"
+function Developer(props)
+{ 
+  console.log(props)
   return (
-    <p>i am a person {age} and name {name}</p>
+    <div style={{
+      border: '2px solid green',
+      borderRadius:'20px',
+      margin:'10px'
+    }}>
+      <h3>Developer:  {props.name} </h3>
+      <p>Technology:  {props.tech} </p>
+    </div>
   )
 }
- 
+
+function Student(){
+  return (
+    <div className='Student'>
+      <p>Name:</p>
+      <p>Dept:</p>
+    </div>
+  )
+}
+
+function Person(props){
+  
+  const personStyle={
+    color:'red',
+    textAlign:'center',
+    border:'2px solid white',
+    borderRadius:"10px",
+    padding:'20px'
+  }
+  return (
+    <p style={personStyle}>i am a {props.age} and name {props.name} </p>
+  )
+}
 function Pet(){
 return (
   <h1>Dogesh</h1>
-
 )
 
 }
