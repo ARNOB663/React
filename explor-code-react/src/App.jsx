@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Todo from './Todo'
 import './App.css'
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
  <>
   <h1>React Core concept</h1>
-  <Student/>
+  {/* <Student/>
   <Person age='20' name='arnb'/>
   <Developer name='akkas' tech='JS'> </Developer> 
   <Developer name='sakib' tech='C++'/>
@@ -16,7 +17,8 @@ function App() {
   <Player name='tamim' runs="6000"/>
   <Player name='mushi' runs="5000"/>
   <Salary name='Alex' amont='6k'/> 
-  <Salary name='Alex' /> 
+  <Salary name='Alex' />  */}
+  <Todo Task="learn react" isDone={true}/>
  </>
   )
 }
