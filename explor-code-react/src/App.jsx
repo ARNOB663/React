@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Todo from './Todo'
 import './App.css'
+import Food from './Food'
 
 function App() {
 
@@ -18,7 +19,12 @@ function App() {
   <Player name='mushi' runs="5000"/>
   <Salary name='Alex' amont='6k'/> 
   <Salary name='Alex' />  */}
-  <Todo Task="learn react" isDone={true}/>
+  <Todo task="learn react" isDone={true}/>
+  <Todo task="be productive" isDone={true}/>
+  <Todo task="Dont be fucking lazy" isDone={false}/>
+  <Food item="Chiken" isHot={true}></Food>
+  {/* <food item="Butter Chiken" isHot={true} /> */}
+  
  </>
   )
 }
