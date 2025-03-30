@@ -4,12 +4,41 @@ import viteLogo from '/vite.svg'
 import Todo from './Todo'
 import './App.css'
 import Food from './Food'
-
+import Actor from './Actor'
+import Vardrid from './Vardrid'
+import Library from './Library'
 function App() {
+
+  const actors = ['naymer','vini','bappi vai','penaldo'];
+
+  const vardrid =[
+    
+    {id:1,name:'Crynicius jr',age:69,father:"Rodri"},
+    {id:2,name:'penaldo',age:41,father:"messi"}
+
+  ]
+  const books=[
+     {id:1,name:'physics',price:"250"},
+     
+
+  ]
+
 
   return (
  <>
   <h1>React Core concept</h1>
+  <Library></Library>
+
+
+
+    {/* {
+    actors.map(actor => <Actor actor={actor}></Actor>)  
+    } */}
+    {
+      vardrid.map(vardrid=> <Vardrid  key={vardrid.id} vardrid={vardrid}></Vardrid> )
+    }
+
+
   {/* <Student/>
   <Person age='20' name='arnb'/>
   <Developer name='akkas' tech='JS'> </Developer> 
@@ -19,12 +48,11 @@ function App() {
   <Player name='mushi' runs="5000"/>
   <Salary name='Alex' amont='6k'/> 
   <Salary name='Alex' />  */}
-  <Todo task="learn react" isDone={true}/>
+  {/* <Todo task="learn react" isDone={true}/>
   <Todo task="be productive" isDone={true}/>
   <Todo task="Dont be fucking lazy" isDone={false}/>
-  <Food item="Chiken" isHot={true}></Food>
+  <Food item="Chiken" isHot={true}></Food> */}
   {/* <food item="Butter Chiken" isHot={true} /> */}
-  
  </>
   )
 }
