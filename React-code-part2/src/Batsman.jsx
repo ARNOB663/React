@@ -25,6 +25,7 @@ export default function Batsman(){
   return  (
     <div>
         <h3>
+            
             Player: BD Batsman
         </h3>
         <h2>Number of Six: {six}</h2>
