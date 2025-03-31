@@ -21,7 +21,7 @@ export default function Batsman(){
         setfour(numofFour)
         setRuns(newRun);
     }
-
+    
   return  (
     <div>
         <h3>
@@ -31,8 +31,8 @@ export default function Batsman(){
         <h2>Number of Six: {six}</h2>
         <h2>Number of Four: {four}</h2>
         {  
-             runs => 50 && <p>Your have scord half century</p>
-        }
+        runs => 50 && <p>Your have scord half century</p>
+       }
         <h1> Score: {runs}</h1>
         <button onClick={handleSingle}>Single</button>
         <button onClick={handleFour}>Four</button>
