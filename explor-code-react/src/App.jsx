@@ -19,15 +19,15 @@ function App() {
   ]
   const books=[
      {id:1,name:'physics',price:"250"},
-     
-
+     {id:2,name:"chem",price:"350"}                 
+                 
   ]
 
 
   return (
  <>
   <h1>React Core concept</h1>
-  <Library></Library>
+  <Library books={books}></Library>
 
 
 
