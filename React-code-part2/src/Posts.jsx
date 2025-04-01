@@ -3,7 +3,7 @@ import Post from "./Post";
 
 export default  function Posts({postPromise}){
 
-    console.log(postPromise)
+//    console.log(postPromise)
 
     const posts = use(postPromise);
     console.log(posts);
