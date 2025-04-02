@@ -15,7 +15,5 @@ export default  function Posts({postPromise}){
           posts.map(post =><Post Post={post}></Post>)
         }
     </div>
-
   )
-
 }
