@@ -5,5 +5,9 @@
 }
 .country-visited{
     background-color: darkgrey;
+
+}
+.visited-flags-container img{
+    width: 150px;
     
 }
