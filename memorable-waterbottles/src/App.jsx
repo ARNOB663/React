@@ -2,9 +2,10 @@ import { Suspense } from 'react'
 import './App.css'
 import Bottles from './components/Bottles/Bottles'
 
-const BottlesPromise = fetch('https://raw.githubusercontent.com/ARNOB663/bottles-data/refs/heads/main/bottles.json').then(res => res.json)
-const BottlesPromise2= fetch('https://raw.githubusercontent.com/ARNOB663/bottles-data/refs/heads/main/bottles.json').then
+// const BottlesPromise = fetch('https://raw.githubusercontent.com/ARNOB663/bottles-data/refs/heads/main/bottles.json').then(res => res.json)
+// const BottlesPromise2= fetch('https://raw.githubusercontent.com/ARNOB663/bottles-data/refs/heads/main/bottles.json').then(res => res.json)
 
+const bottlesPromise = fetch('bottles.json').then(res => res.json())
 function App() {
 
   // const bottles = [
@@ -18,7 +19,7 @@ function App() {
     <>
      <h1>Buy Awesome Water Bottle</h1>
      <Suspense fallback={<h3></h3>}>
-      <Bottles BottlesPromise={BottlesPromise}></Bottles>
+      <Bottles BottlesPromise={bottlesPromise}></Bottles>
      </Suspense>
     </>
   )
