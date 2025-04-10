@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "brand": "Aquafina",
+    "capacity": "500ml",
+    "material": "Plastic",
+    "price": 1.5,
+    "isReusable": false,
+    "canHoldHot": false,
+    "canHoldCold": true,
+    "image": "https://example.com/images/aquafina.jpg"
+  },
+  {
+    "id": 2,
+    "brand": "Hydro Flask",
+    "capacity": "750ml",
+    "material": "Stainless Steel (Insulated)",
+    "price": 35.0,
+    "isReusable": true,
+    "canHoldHot": true,
+    "canHoldCold": true,
+    "image": "https://example.com/images/hydroflask.jpg"
+  },
+  {
+    "id": 3,
+    "brand": "Nestlé Pure Life",
+    "capacity": "1L",
+    "material": "Plastic",
+    "price": 2.0,
+    "isReusable": false,
+    "canHoldHot": false,
+    "canHoldCold": true,
+    "image": "https://example.com/images/nestle-pure-life.jpg"
+  },
+  {
+    "id": 4,
+    "brand": "Nalgene",
+    "capacity": "1.5L",
+    "material": "Tritan (BPA-free Plastic)",
+    "price": 12.99,
+    "isReusable": true,
+    "canHoldHot": true,
+    "canHoldCold": true,
+    "image": "https://example.com/images/nalgene.jpg"
+  },
+  {
+    "id": 5,
+    "brand": "S'well",
+    "capacity": "500ml",
+    "material": "Stainless Steel (Triple-layered)",
+    "price": 25.0,
+    "isReusable": true,
+    "canHoldHot": true,
+    "canHoldCold": true,
+    "image": "https://example.com/images/swell.jpg"
+  }
+]
