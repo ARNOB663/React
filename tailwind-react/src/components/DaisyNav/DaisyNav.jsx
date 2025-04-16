@@ -1,6 +1,9 @@
     import React from 'react';
 
-    const DaisyNav = () => {
+    const DaisyNav = ({pricing}) => {
+    
+        const {name,price} = pricing;
+
         return (
             <div>
                 <div className="navbar bg-base-100 shadow-sm">
