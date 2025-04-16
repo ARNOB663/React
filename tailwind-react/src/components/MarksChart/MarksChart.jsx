@@ -20,7 +20,6 @@ const MarksChart = ({marksPromise}) => {
         student.avg = avg;
         return student
     })
- 
     console.log(marksChartData)
      
     return (
