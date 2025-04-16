@@ -5,13 +5,13 @@ import NavBar from './components/NavBar/NavBar'
 
 function App() {
   
-
   return (
     <>
       <div>
         <header>
-             <DaisyNav></DaisyNav>
+             
              <NavBar></NavBar>
+             <DaisyNav></DaisyNav>
         </header>   
       </div>
      
