@@ -36,7 +36,7 @@ const NavBar = () => {
 
   const links = navigationData.map(route => <Link  key={route.id} route={route}></Link>)
     return (
-        <nav className='flex justify-between mx-2'>   
+        <nav className='flex justify-between mx-2 mt-3'>   
          <span className='flex gap-2' onClick={() =>setOpen(!open)}>
          {
           open ? 
