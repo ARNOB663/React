@@ -16,8 +16,6 @@ const router = createBrowserRouter([
      {index: true, Component: Home},
      {path:'mobiles',Component: Mobiles},
      {path:'laptops',Component:Laptops,}
-     
-     
    ]
   },
   {
