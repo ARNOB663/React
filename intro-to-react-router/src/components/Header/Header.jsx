@@ -1,10 +1,9 @@
 import React from 'react';
 import App from '../../../../explor-code-react/src/App';
 import Mobiles from '../Mobiles/Mobiles';
-import { Link  } from 'react-router';
+import { Link,NavLink  } from 'react-router';
 import Laptops from '../../Laptops/Laptops';
 import './Header.css';
-
 
 const Header = () => {
     return (
@@ -16,10 +15,10 @@ const Header = () => {
                 <a href='/laptops'>laptops</a>
                 <a href=''></a> */}
 
-            <Link  to='/'>Home</Link>
-            <Link  to='/mobiles'>Mobiles</Link>
-            <Link  to='/laptops'>Laptops</Link>
-            <Link  to='/'>Home</Link>
+            <NavLink  to='/'>Home</NavLink>
+            <NavLink  to='/mobiles'>Mobiles</NavLink>
+            <NavLink  to='/laptops'>Laptops</NavLink>
+            <NavLink  to='/'>Home</NavLink>
             </nav>
         </div>
     );

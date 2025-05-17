@@ -2,21 +2,19 @@ import React from 'react';
 import Header from '../Header/Header';
 import { Outlet } from 'react-router';
 import Footer from '../Footer.jsx/Footer';
+import SideBar from '../SideBar/SideBar';
+import './Root.css';
 
 const Root = () => {
     return (
         <div>
             <Header></Header>
-            //
+            
 
-            <div>
-                
-                <aside>
+            <div className='root-main' >
 
-
-                </aside>
+                 <SideBar></SideBar>
                 <Outlet></Outlet>
-
             </div>
             <Footer></Footer>
         </div>
